@@ -21,6 +21,10 @@ function setup(app, students) {
     let model = {title: "About"};
     res.render('about', model);
   });
+  app.get('/contactus', function(req, res) {
+    let model = {title: "Contact Us"};
+    res.render('contactus', model);
+  });
 
   app.get('/add-student', function(req, res) {
     let model = {title: "Add Student"};
